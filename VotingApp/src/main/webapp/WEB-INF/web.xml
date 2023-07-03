@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>VotingApp</display-name>
+  <welcome-file-list>
+  <welcome-file>register.html</welcome-file>
+  <welcome-file>signin.html</welcome-file> 
+  <welcome-file>vote.html</welcome-file>
+  <welcome-file>counts.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet-mapping>
+  <servlet-name>voting</servlet-name>
+  <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>register</servlet-name>
+  <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>attendance</servlet-name>
+  <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>login2</servlet-name>
+  <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>count_vote</servlet-name>
+  <url-pattern>/countsv</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>login2</servlet-name>
+  <servlet-class>vote.login2</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>register</servlet-name>
+  <servlet-class>vote.register</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>voting</servlet-name>
+  <servlet-class>vote.voting</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>count_vote</servlet-name>
+  <servlet-class>vote.count_vote</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>attendance</servlet-name>
+  <servlet-class>vote.attendance</servlet-class>
+  </servlet>
+</web-app>

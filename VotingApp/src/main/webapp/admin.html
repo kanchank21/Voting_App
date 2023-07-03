@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>admin</title>
+<style>
+ form {
+      border: 1px solid black;
+       border-radius: 10px;
+      padding: 20px;
+      margin-left:33%;
+     
+      width: 300px;
+     margin-top:11%;
+      background-color: #F2F2F2;
+    }
+
+.ab{
+display: flex;
+}
+
+#p:hover{
+color:red;
+font-weight: bold;
+}
+#az{
+margin-left: 40%;
+}
+
+a{
+
+margin-top:6%;
+margin-left: 10px;
+}
+
+h5{
+font-weight:400;
+margin-left: 20%;
+}
+</style>
+
+</head>
+<body>
+<form action="admin_login.jsp" method="post" >
+<h3>Admin Registration</h3>
+Email: <input type="email" name="email" placeholder="email" required="required"> <br> <br>
+	Password: <input type="text" name="pass" placeholder="password" required="required"> <br> <br>
+	
+	<input id="az" type="submit" value="submit"> 
+	 <div id="p" class="ab">
+	 <h5 >Already Admin?</h5> 
+	 <a href="admin_login.jsp">Login</a>
+	 </div>
+</form>
+</body>
+<style>
+
+</style>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vote</title>
+<style>
+    form {
+      border: 1px solid black;
+       border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      margin: 0 auto;
+      background-color: #F2F2F2;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+  </style>
+
+</head>
+<body>
+	<form action="hello" method="post">
+	<h4>Vote Here</h4>
+	
+	Voter ID:<input type="number" name="id" required="required">
+	<br>
+	<br>
+	<input type="radio" name="vote" value="candidate1">candidate1
+	<br>
+	<br>
+	<input type="radio" name="vote" value="candidate2">candidate2
+	<br>
+	<br>
+	<input type="radio" name="vote" value="candidate3">candidate3
+	<br>
+	<br>
+	<input type="submit" value="submit">
+	</form>
+	
+</body>
+</html>
